@@ -16,4 +16,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     "theme
     Plug 'joshdick/onedark.vim'  
+    " Stable version of coc
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+" Keeping up to date with master
+    Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
     call plug#end()
